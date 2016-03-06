@@ -9,7 +9,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom("METEOR@0.9.0");
 
-  api.use(['momentjs:moment@2.10.6'], ['client', 'server']);
+  api.use(['mquandalle:moment@1.0.1'], ['client', 'server']);
 
   api.addFiles('lib/moment-range/dist/moment-range.js');
 });
@@ -17,7 +17,7 @@ Package.onUse(function(api) {
 Package.on_test(function (api) {
   api.use([
     'jquery@1.0.0',
-    'momentjs:moment@2.10.6'
+    'mquandalle:moment@1.0.1'
   ]);
   api.addFiles('lib/moment-range/dist/moment-range.js');
 });
